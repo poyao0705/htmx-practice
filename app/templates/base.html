@@ -4,18 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}My App{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
-    <style>
-        body { font-family: sans-serif; padding: 2rem; max-width: 600px; margin: 0 auto; }
-        .card { border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .btn { padding: 0.5rem 1rem; cursor: pointer; background: #eee; border: 1px solid #ccc; border-radius: 4px; }
-        .btn-primary { background: #007bff; color: white; border: none; }
-        .form-group { margin-bottom: 1rem; }
-        label { display: block; margin-bottom: 0.25rem; font-weight: bold; }
-        input { width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
-    </style>
 </head>
-<body>
+<body class="font-sans p-8 max-w-2xl mx-auto">
     <main>
         {% block content %}{% endblock %}
     </main>
