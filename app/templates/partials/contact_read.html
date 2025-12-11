@@ -1,0 +1,14 @@
+<div class="card" hx-target="this" hx-swap="outerHTML">
+    <div class="form-group">
+        <label>Name</label>
+        <div>{{ contact.name }}</div>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <div>{{ contact.email }}</div>
+    </div>
+    
+    <button hx-get="/contact/edit" class="btn btn-primary">
+        Edit Profile
+    </button>
+</div>
