@@ -1,5 +1,5 @@
 from fastapi import HTTPException
-from ..repositories.contact_repo import ContactRepository
+from app.repositories.contact_repo import ContactRepository
 
 
 class ContactService:
